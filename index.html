@@ -11,9 +11,11 @@
     }
 
     body{ background-color: rgb(1, 1, 14);
-    width: 500px;}
+     }
+   
     div{ top: -50px;
         left: 0px;
+        margin: auto;
     height: 100px;
     width: 500px;
     background-color: black;
@@ -30,6 +32,17 @@
             left: -10px;
             width: 500px;
             height: 252px;}
+            @media screen and (min-width:0px) and (max-width:200px){ 
+            img{ width: 200px;}
+            
+        }
+        @media screen and (min-width:201px) and (max-width:1000px){
+            img{ width:100%}
+        }
+
+
+
+
         a{     position: relative;
                 color: white;
                 background-color: blue;
@@ -60,11 +73,11 @@
     <div>
     <h1>ManutenCar.App </h1>
     </div>
-    
+    <div>
     <img src="carro.jpg" alt="carro">
     <a href="form.html">Entrar</a> 
-    <img src="btnface.jpg" alt="">
-   
+    <img src="btnface.jpg" alt="" class="btns">
+</div>
 </div> <br> <br><br>
 <footer><p>&#0169 Desenvolvido Por Marcos Crispim </p></footer>
  <audio src="roncomotor.ogg" type="audio/ogg" controls></audio>
